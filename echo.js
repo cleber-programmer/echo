@@ -33,7 +33,7 @@ this.Atomic.module('$echo', [
   }
 
   function compare(rect) {
-    return rect.top <= document.documentElement.clientHeight; /* && rect.bottom <= 0; */
+    return (rect.top <= document.documentElement.clientHeight); // && (rect.bottom <= 0);
   }
 
   function stub() {
